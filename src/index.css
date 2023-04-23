@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.invisible {
+    display: none;
+}
+
+.app {
+    width: 600px;
+    padding: 10px;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popover-button {
+    text-align: center;
+    width: 250px;
+    background-color: rgb(191, 42, 42);
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    position: relative;
+    user-select: none;
+
+}
+
+.popover-button:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.popover-tip {
+    text-align: left;
+    width: 250px;
+    border: 1px solid gray;
+    border-radius: 3px;
+    margin-top: -100px;
+    position: absolute;
+    top: -25px;
+    left: 0;
+}
+
+.popover-tip:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    left: 115px;
+    bottom: -6px;
+    transform: rotate(45deg);
+    background-color: white;
+}
+
+.popover-tip-title {
+    background-color: gray;
+    color: white;
+    padding: 10px;
+}
+
+.popover-tip-text {
+    padding: 10px;
+    color: black;
+} 
