@@ -12,13 +12,14 @@ install:
   - npm cache clean --force
   - npm install  # команда установки зависимостей
   - npm install puppeteer
+  - npm install pm2 -g
  
 
 build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
   - npm run build   # команда сборки
-  - npm run start
+  - pm2 --name popover start npm -- start
 
 test_script:
   - npm run lint && npm run e2e  # скрипт тестирования
