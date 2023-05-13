@@ -10,7 +10,6 @@ cache: node_modules  # кеширование
 
 install:
   - npm install  # команда установки зависимостей
-  - npm install puppeteer-chromium-resolver
  
 
 build: off  # отключаем встроенную в appveyor систему сборки
