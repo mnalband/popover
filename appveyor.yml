@@ -11,6 +11,7 @@ cache: node_modules  # кеширование
 install:
   - npm cache clean --force
   - npm install  # команда установки зависимостей
+  - npm install puppeteer
  
 
 build: off  # отключаем встроенную в appveyor систему сборки
