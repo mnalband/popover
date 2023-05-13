@@ -10,8 +10,7 @@ cache: node_modules  # кеширование
 
 install:
   - npm install  # команда установки зависимостей
-  - curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-  - sudo apt-get install -y chromium-browser
+  - npm install puppeteer-chromium-resolver
  
 
 build: off  # отключаем встроенную в appveyor систему сборки
